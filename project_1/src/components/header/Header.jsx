@@ -20,12 +20,12 @@ const colorLink = ({ isActive }) =>
      {/*лэйбл*/}
    <div className={style.label}>
       <div className={style.front}>
-        <a href="http://github.com" > {/*поменять на свой репозиторий*/}
+        <a href="https://github.com/Alekseibr" > 
           <img aria-hidden="true" focusable="false" src={lableImg} alt='Lable image' />
         </a>
       </div>
       <div className={style.back}>
-        <a href="http://github.com" > {/*поменять на свой репозиторий*/}
+        <a href="https://github.com/Alekseibr" > 
           <img aria-hidden="true" focusable="false" src={github} alt='Lable image' />
         </a>
       </div>
