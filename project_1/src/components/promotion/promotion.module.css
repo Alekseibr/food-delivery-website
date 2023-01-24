@@ -1,0 +1,52 @@
+
+.wrap {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 0 30px; /*для отступов элементов от краев браузера*/
+}
+
+.wrap div {
+    height: auto;
+    width: auto;
+    margin: 0 30px; /*для отступов элементов друг от друга*/
+    margin-bottom: 50px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 3px 2px #000000;
+}
+.wrap img {
+    display: block;
+    width: 400px;
+    height: auto;
+    border-radius: inherit;
+    -webkit-border-radius: inherit;
+    -moz-border-radius: inherit;
+    -ms-border-radius: inherit;
+    -o-border-radius: inherit;
+}
+.title{
+    text-align: center;
+    margin-top: 50px;  
+    margin-bottom: 50px;
+    font-size: 2.5em;
+}
+
+@media (max-width: 479px) {
+    .wrap {
+        padding: 0 0; /*для отступов элементов от краев браузера*/
+    }
+    .wrap div{
+        height: auto;
+        width: auto;
+    }
+    .wrap img{
+        display: block;
+        height: auto;
+        width: 100%;
+    }
+
+}

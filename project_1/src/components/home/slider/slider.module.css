@@ -1,0 +1,89 @@
+
+.slider{
+    width: 100%;
+    height: 50vh;
+    margin-top: 2px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrap_slider{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.wrap_slider img{
+    position: absolute;
+    width: 100%;
+    height: 50vh;
+}
+/*без первого слайда, т.к. он появляется при загрузке*/
+.wrap_slider > div:not(div:first-child){
+    opacity: 0;
+    transition: 1.5s;
+    -webkit-transition: 1.5s;
+    -moz-transition: 1.5s;
+    -ms-transition: 1.5s;
+    -o-transition: 1.5s;
+}
+.wrap_slider > div:first-child{
+    opacity: 1;
+    transition: 1.5s;
+    -webkit-transition: 1.5s;
+    -moz-transition: 1.5s;
+    -ms-transition: 1.5s;
+    -o-transition: 1.5s;
+}
+
+@media (min-width: 1024px) and (max-width: 1199px) {
+    .slider{
+        height: 50vw;
+    }
+    .wrap_slider img{
+        height: 50vw;
+    }
+}
+@media (min-width: 769px) and (max-width: 1023px) {
+    .slider{
+        height: 50vw;
+    }
+    .wrap_slider img{
+        height: 50vw;
+    }
+}
+@media (min-width: 480px) and (max-width: 768px) {
+    .slider{
+        height: 50vw;
+    }
+    .wrap_slider img{
+        height: 50vw;
+    }
+}
+@media (min-width: 360px) and (max-width: 479px) {
+    .slider{
+        height: 50vw;
+    }
+    .wrap_slider img{
+        height: 50vw;
+    }
+}
+@media (min-width: 320px) and (max-width: 359px) { 
+    .slider{
+        height: 50vw;
+    }
+    .wrap_slider img{
+        height: 50vw;
+    }
+}
+@media (max-width: 319px) {
+    .slider{
+        height: 50vw;
+    }
+    .wrap_slider img{
+        height: 50vw;
+    }
+}
