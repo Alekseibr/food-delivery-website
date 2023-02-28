@@ -53,10 +53,27 @@ const DeliveryAddress = (props)=> {
         }
     }
 
+    //функция склонения слова товар в зависимости от количества товаров
+    function declination(n){
+        if(n >= 0 && (n ^ 0) === n){
+            if(n % 100 > 10 && n % 100 < 20){
+                return 'товаров';
+            }
+            else if (n % 10 > 1 && n % 10 < 5){
+                return 'товара';
+            }
+            else if (n % 10 === 1){
+                return 'товар';
+            }else{
+                return 'товаров';
+            }
+        }
+    }
+
     return (
         <div className={style.wrap}>
             <div className={style.child_1}>
-                <h1>Вы заказали {props.countProduct} товаров</h1>
+                <h1>Вы заказали {props.countProduct} {declination(props.countProduct)}</h1>
                 <h2>Итоговая сумма заказа: {props.totalPrice} &#8381;</h2>
             </div>
             <div className={style.child_2}>
