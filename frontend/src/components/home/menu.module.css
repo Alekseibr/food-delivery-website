@@ -1,0 +1,160 @@
+
+.wraperMain{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 90%; /*необязательно*/
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 30px; /*для отступов элементов друг от друга*/
+}
+.wrapCard{
+    overflow: hidden; /* Скрываем всё за контуром */
+    height: auto;
+    width: 400px;
+    margin: 0 30px; /*для отступов элементов друг от друга*/
+    margin-bottom: 20px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000000;
+}
+.card{
+    display: block;
+    height: auto;
+    width: 400px;
+    filter: brightness(40%);
+    -webkit-filter: brightness(40%);
+}
+
+.card:hover{
+    filter: brightness(100%);
+    -webkit-filter: brightness(100%);
+}
+
+.title{
+    text-align: center;
+    margin-top: 50px;  
+    margin-bottom: 50px;
+    font-size: 2.5em;
+}
+.productName{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+    margin-bottom: 100px;
+    width: 400px;
+    margin-left: 30px;
+    word-wrap: break-word;
+}
+
+/*Перенес анимации смещения на карточках товаров с разрешения 1200px , т.к. на маленьких устройствах 
+в них нет смысла и это только создает баги при повороте экрана (двигает картинки в карточках)*/
+@media (min-width: 1200px) {
+    .card{
+        -webkit-transition:.7s;
+        -moz-transition:.7s;
+        -ms-transition:.7s;
+        -o-transition:.7s;
+        transition:.7s;
+    }
+    .card:hover{
+        -webkit-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        -o-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+}
+@media (min-width: 1024px) and (max-width: 1199px) {
+    .wrapCard{
+        height: auto;
+        width: 250px;
+    }
+    .card{
+        display: block;
+        height: auto;
+        width: 250px;
+        filter: brightness(100%);
+        -webkit-filter: brightness(100%);
+    }
+    .productName{
+        width: 250px;
+        margin-bottom: 40px;
+    }
+}
+@media (min-width: 769px) and (max-width: 1023px) {
+    .wrapCard{
+        height: auto;
+        width: 250px;
+    }
+    .card{
+        display: block;
+        height: auto;
+        width: 250px;
+        filter: brightness(100%);
+        -webkit-filter: brightness(100%);
+    }
+    .productName{
+        width: 250px;
+        margin-bottom: 40px;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+    .title{
+        font-size: 1.9em;
+    }
+    .wrapCard{
+        height: auto;
+        width: 300px;
+    }
+    .card{
+        display: block;
+        height: auto;
+        width: 300px;
+        filter: brightness(100%);
+        -webkit-filter: brightness(100%);
+    }
+    .productName{
+        width: 300px;
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 479px) {
+    .wrapCard{
+        height: auto;
+        width: auto;
+    }
+    .card{
+        display: block;
+        height: auto;
+        width: 100%;
+        filter: brightness(100%);
+        -webkit-filter: brightness(100%);
+    }
+    .productName{
+        width: 90vw;
+        margin-bottom: 40px;
+        margin-left: 0;
+    }
+}
+@media (min-width: 360px) and (max-width: 479px) {
+    .title{
+        font-size: 1.8em;
+    }
+}
+@media (min-width: 320px) and (max-width: 359px) {
+    .title{
+        font-size: 1.6em;
+    } 
+}
+
+@media (max-width: 319px) {
+    .title{
+        font-size: 1.4em;
+    }
+}

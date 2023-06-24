@@ -1,0 +1,318 @@
+
+.wrapAll{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    padding: 0 80px; /*для отступов элементов от края экрана*/
+    margin-bottom: 40px;
+}
+.title{
+    text-align: center;
+    margin-top: 50px;  
+    margin-bottom: 50px;
+    font-size: 2.5em;
+    width: 80%;
+    word-break: break-word;
+}
+.wrapCard{
+    width: 600px;
+    margin-bottom: 40px;
+}
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+}
+.card img{
+    width: 75%;
+    height: auto;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    border-radius: 20px;
+    box-shadow:  0 0 10px #000000;
+}
+.wrap_description{
+    height: auto;
+    width: 500px;
+    margin: 0 80px; /*для отступов элементов друг от друга*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    font-size: 20px;
+    background-color: #2562179d;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
+.wrap_description div{
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 12px #0c0c0c, 2px 2px 3px #000000;
+    color: #f9faf6;
+}
+
+.wrap_description strong{
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+.description{
+    width: 100%;
+    text-align: center;
+    padding: 15px 15px 0 15px;
+    word-break: break-word;
+}
+
+.btn{
+    height: 80px;
+    width: 200px;
+    padding: 0 2px 0 2px;
+    font-size: 20px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    background-color: #747e55;
+    color: #f0f8ff;
+    cursor: pointer;
+    text-shadow: 1px 1px 0 #000000;
+    box-shadow: 0 0 1px 1px #000000;
+    font-weight: bold;
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* убираем выделение кнопки синим на Андроиде*/
+    -webkit-tap-highlight-color: transparent; /* убираем выделение кнопки синим на Андроиде*/
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; /*убираем выделение текста*/
+    -webkit-transition: .7s;
+    -moz-transition: .7s;
+    -ms-transition: .7s;
+    -o-transition: .7s;
+    transition: .7s;
+    
+}
+
+/*hover на кнопке работает только для настольных компьютеров, в иных случаях некрасивые баги*/
+ @media (min-width: 1200px) { 
+    .btn:hover{
+        transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+        color: #cfae2c;
+        text-shadow: 1px 1px 0 black;
+        box-shadow: 0 0 1px 1px black, 0 0 62px 2px #0c0c0c inset;
+     }
+}
+@media (min-width: 1024px) {
+    .title{
+        margin: 10vh 0 10vh 0;
+    }
+}
+ @media (min-width: 1240px) and (max-width: 1419px) { 
+    .wrapAll{
+        padding: 0 50px; /*для отступов элементов от края экрана*/
+    }
+    .wrapCard{
+        width: auto;
+        margin-bottom: 0;
+    }
+    .card{
+        width: auto;
+        margin-bottom: 0;
+    }
+    .card img{
+        display: block;
+        height: auto;
+        width: 450px;
+        margin-left: 80px; /*для отступов элементов друг от друга*/
+    }
+    .wrap_description{
+        width: 450px;
+        height: auto;
+        margin: 0 80px; /*для отступов элементов друг от друга*/
+        font-size: 18px;
+    }
+    .btn{
+        height: 70px;
+        width: 137px;
+        padding: 0 2px 0 2px;
+        font-size: 18px;
+    }
+}
+@media (min-width: 1024px) and (max-width: 1239px) { 
+    .wrapAll{
+        padding: 0 50px; /*для отступов элементов от края экрана*/
+        justify-content: space-around;
+    }
+    .title{
+        font-size: 1.9em;
+    } 
+    .wrapCard{
+        width: auto;
+        margin-bottom: 0;
+    }
+    .card{
+        width: auto;
+        margin-bottom: 0;
+    }
+    .card img{
+        display: block;
+        height: auto;
+        width: 400px;
+        margin-left: 20px; /*для отступов элементов друг от друга*/
+    }
+    .wrap_description{
+        width: 400px;
+        height: auto;
+        margin: 0 20px; /*для отступов элементов друг от друга*/
+        font-size: 18px;
+    }
+    .wrap_description div{
+        margin-bottom: 25px;
+    }
+    .wrap_description strong{
+        font-size: 20px;
+    }
+    .btn{
+        height: 60px;
+        width: 137px;
+        padding: 0 2px 0 2px;
+        font-size: 16px;
+    }
+}
+@media (min-width: 769px) and (max-width: 1023px) {
+    .wrapAll{
+        padding: 0 10px; /*для отступов элементов от края экрана*/
+    }
+    .title{
+        font-size: 1.8em;
+    }
+    .wrapCard{
+        width: auto;
+        margin-bottom: 0;
+    }
+    .card{
+        width: auto;
+        margin-bottom: 0;
+    }
+    .card img{
+        display: block;
+        height: auto;
+        width: 365px;
+        margin: 0 20px; /*для отступов элементов друг от друга*/
+    }
+    .wrap_description{
+        width: 300px;
+        height: auto;
+        margin: 0 20px; /*для отступов элементов друг от друга*/
+        font-size: 18px;
+    }
+    .wrap_description div{
+        margin-bottom: 25px;
+    }
+    .wrap_description strong{
+        font-size: 20px;
+    }
+    .btn{
+        height: 60px;
+        width: 137px;
+        padding: 0 2px 0 2px;
+        font-size: 16px;
+    }
+}
+@media (min-width: 480px) and (max-width: 768px) {
+    .wrapAll{
+        padding: 0 0; /*для отступов элементов от края экрана*/
+    }
+    .title{
+        font-size: 1.9em;
+    }
+    .wrapCard{
+        width: auto;
+    }
+    .card{
+        width: auto;
+    }
+    .card img{
+        display: block;
+        height: auto;
+        width: 300px;
+    }
+    .wrap_description{
+        width: 300px;
+        height: auto;
+        font-size: 18px;
+        margin: 0 100px; /*для отступов элементов друг от друга*/
+    }
+    .wrap_description div{
+        margin-bottom: 25px;
+    }
+    .wrap_description strong{
+        font-size: 20px;
+    }
+    .btn{
+        height: 60px;
+        width: 137px;
+        padding: 0 2px 0 2px;
+        font-size: 16px;
+    }
+}
+@media (max-width: 479px) {
+    .wrapAll{
+        padding: 0 0; /*для отступов элементов от края экрана*/
+    }
+    .wrapCard{
+        width: auto;
+    }
+    .card{
+        width: auto;
+    }
+    .card img{
+        display: block;
+        height: auto;
+    }
+    .wrap_description{
+        width: 80%;
+        height: auto;
+        margin: 0 0 60px 0; /*для отступов элементов друг от друга*/
+        font-size: 18px;
+    }
+    .wrap_description div{
+        margin-bottom: 25px;
+    }
+    .wrap_description strong{
+        font-size: 20px;
+    }
+    .btn{
+        height: 60px;
+        width: 137px;
+        padding: 0 2px 0 2px;
+        font-size: 16px;
+    }
+}
+@media (min-width: 360px) and (max-width: 479px) {  
+    .title{
+        font-size: 1.7em;
+    }
+ 
+}
+@media (min-width: 320px) and (max-width: 359px) { 
+    .title{
+        font-size: 1.7em;
+    }
+}
+@media (max-width: 319px) {
+    .title{
+        font-size: 1.5em;
+    }
+}

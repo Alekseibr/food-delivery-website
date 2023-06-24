@@ -1,0 +1,228 @@
+
+.wrap {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 20px;
+    font-size: 1rem;
+}
+.wrap div{
+    margin: 0 20px;
+}
+.wrap h1, .wrap h2 {
+    margin-bottom: 30px;
+}
+.wrapForm {
+    display: flex;
+    flex-flow: column nowrap;
+    margin-top: 100px;
+    align-items: flex-end;
+}
+.child_1{
+    order: 2;
+}
+.child_2{
+    order: 1;
+}
+
+.wrapForm label {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+.wrapForm input, .wrapForm select {
+    font-size: .8em;
+    margin-left: 30px;
+    width: 300px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    padding: 5px;
+    outline: none;
+    border: 2px solid #635f5f;
+}
+.wrapForm input:focus{
+    background-color: rgb(155, 177, 154);
+    border: 2px solid #1ed51e;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+.wrapForm button {
+    align-self: flex-end;
+    cursor: pointer;
+    height: 2em;
+    width: 6em;
+    border-radius: 20px;
+    background-color: darkgreen;
+    color: aliceblue;
+    font-size: 1.5em;
+    box-shadow: 0 0 2px 1px black;
+    margin-bottom: 40px;
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* убираем выделение кнопки синим на Андроиде*/
+    -webkit-tap-highlight-color: transparent; /* убираем выделение кнопки синим на Андроиде*/
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; /*убираем выделение текста*/
+}
+
+
+@media (min-width: 769px) and (max-width: 974px) {
+    .wrapForm {
+        margin-top: 0;
+    }
+    .child_1{
+        display: flex;
+        flex-flow: column nowrap;
+        order: 1;
+        text-align: center;
+    }
+    .child_1 h1{
+        margin-top: 60px;
+        margin-bottom: 20px;
+    }
+    .child_1 h2{
+        margin-bottom: 60px;
+    }
+    .child_2{
+        order: 2; 
+    }
+    .child_2 h2 {
+        margin-bottom: 40px;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+    .wrap {
+        font-size: .9em;
+        padding: 0 40px;
+        align-items: center;
+    }
+    .wrapForm {
+        margin-top: 0;
+        padding: 0 40px;
+        width: 400px;
+    }
+    .wrapForm input, .wrapForm select {
+        width: 300px;
+    }
+    .child_1{
+        display: flex;
+        flex-flow: column nowrap;
+        order: 1;
+        text-align: center;
+    }
+    .child_1 h1{
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    .child_2{
+        order: 2; 
+    }
+    .child_2 h2 {
+        margin-bottom: 40px;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 479px) {
+    .wrap {
+        font-size: .8em;
+        padding: 0 40px;
+        align-items: center;
+    }
+    .wrapForm {
+        margin-top: 0;
+        padding: 0 40px;
+    }
+    .wrapForm input, .wrapForm select {
+        width: 250px;
+    }
+    .child_1{
+        display: flex;
+        flex-flow: column nowrap;
+        order: 1;
+        text-align: center;
+    }
+    .child_1 h1{
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    .child_2{
+        order: 2; 
+    }
+    .child_2 h2 {
+        margin-bottom: 40px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 359px) {
+    .wrap {
+        font-size: .8em;
+        padding: 0 35px;
+    }
+    .wrapForm {
+        margin-top: 0;
+        padding: 0 35px;
+    }
+    .wrapForm input, .wrapForm select {
+        width: 250px;
+        margin-left: 0;
+    }
+    .child_1{
+        display: flex;
+        flex-flow: column nowrap;
+        order: 1;
+        text-align: center;
+    }
+    .child_1 h1{
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    .child_2{
+        order: 2;
+        text-align: center;
+    }
+    .child_2 h2 {
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 319px) {
+    .wrap {
+        font-size: .7em;
+        padding: 0 20px;
+    }
+    .wrapForm {
+        margin-top: 0;
+        padding: 0 20px;
+    }
+    .wrapForm input, .wrapForm select {
+        width: 200px;
+        margin-left: 0;
+    }
+    .wrapForm label {
+        width: -webkit-fill-available;
+    }
+    .child_1{
+        display: flex;
+        flex-flow: column nowrap;
+        order: 1;
+        text-align: center;
+    }
+    .child_1 h1{
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    .child_2{
+        order: 2;
+        text-align: center;
+    }
+    .child_2 h2 {
+        margin-bottom: 40px;
+    }
+}

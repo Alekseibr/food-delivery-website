@@ -1,0 +1,382 @@
+ {
+ "pizza" : [
+        {
+        "id": 1,
+        "url":"https://s1.1zoom.ru/big0/835/Pizza_Closeup_Ham_Tomatoes_Basil_593448_1280x853.jpg",
+        "group": "pizza",
+        "title":"карбонара",
+        "description":"Грудка куриная копченая, лук маринованный, пепперони, перец халапеньо, помидоры, соус острый, сыр моцарелла, сыр чеддер.",
+        "price": 700,
+        "weight": "1500 грамм",
+        "amount": 1
+        
+    },
+    {
+        "id": 2,
+        "url":"https://s1.1zoom.ru/big0/49/Fast_food_Pizza_499848.jpg",
+        "group": "pizza",
+        "title":"сырная",
+        "description":"Моцарелла, сыры чеддер и пармезан, фирменный соус альфредо, помидор, базелик.",
+        "price": 550,
+        "weight": "1000 грамм",
+        "amount": 1
+        
+    },
+        {
+        "id": 3,
+        "url":"https://s1.1zoom.ru/big0/863/Pizza_Knife_Hands_Piece_Fork_604452_1280x853.jpg",
+        "group": "pizza",
+        "title":"спайси",
+        "description":"Курица, острая приправа, соус острый, сладкий перец, красный лук, томаты, сыр, соус ранч, чеснок.",
+        "price": 500,
+        "weight": "1500 грамм",
+        "amount": 1
+        
+    },       
+    {
+        "id": 4,
+        "url":"https://s1.1zoom.ru/big0/629/Fast_food_Pizza_499725.jpg",
+        "group": "pizza",
+        "title":"по домашнему",
+        "description":"Пикантная пепперони, ветчина, огурчики, томаты, моцарелла, томатный соус, оливки",
+        "price": 750,
+        "weight": "1000 грамм",
+        "amount": 1
+        
+    },
+        {
+        "id": 5,
+        "url":"https://s1.1zoom.ru/big0/752/Fast_food_Pizza_Tomatoes_457293.jpg",
+        "group": "pizza",
+        "title":"пепперони",
+        "description":"Пикантная пепперони, моцарелла, томатный соус",
+        "price": 850,
+        "weight": "1500 грамм",
+        "amount": 1
+        
+    },
+        {
+        "id": 6,
+        "url":"https://s1.1zoom.ru/big0/950/Fast_food_Pizza_Ham_463063.jpg",
+        "group": "pizza",
+        "title":"с ветчиной и грибами",
+        "description":"Ветчина, шампиньоны, моцарелла, томатный соус",
+        "price": 800,
+        "weight": "1500 грамм",
+        "amount": 1
+        
+    }
+],
+
+"rolls":[
+    {
+        "id": 7,
+        "url":"https://img.freepik.com/free-photo/philadelphia-rolls-with-salmon-and-cream-cheese_114579-3289.jpg?w=1380&t=st=1668861643~exp=1668862243~hmac=0f727ff1b954c4d3a441ca330b8a53a8006c126375c5517fede1193e7a5e0b35",
+        "group": "rolls",
+        "title":"филадельфия",
+        "description":"рис, лосось, сыр сливочный, огурец",
+        "price": 390,
+        "weight": "280 грамм",
+        "amount": 1
+        
+    },
+        {
+        "id": 8,
+        "url":"https://img.freepik.com/premium-photo/set-sushi-rolls-seaweed-black-plate_711700-1926.jpg?w=1380",
+        "group": "rolls",
+        "title":"Ролл Масаго",
+        "description":"Масаго, рис, сыр куриная грудка, огурчик",
+        "price": 300,
+        "weight": "400 грамм",
+        "amount": 1
+    }, 
+        {
+        "id": 9,
+        "url":"https://img.freepik.com/free-photo/sushi-with-boiled-rice-salmon_140725-2325.jpg?w=1380&t=st=1670447449~exp=1670448049~hmac=e806d79a48e592f626918605d93a9ea09aff5a9cc4a6cc6d610b6b9d3aca91ac",
+        "group": "rolls",
+        "title":"Ролл бангаса",
+        "description":"рис, лосось, сыр сливочный, пекинская капуста, сырная шапка, соус барбекю",
+        "price": 290,
+        "weight": "340 грамм",
+        "amount": 1
+    },
+        {
+        "id": 10,
+        "url":"https://img.freepik.com/free-photo/sushi-rolls-with-ginger-and-wasabi_140725-3185.jpg?w=1380&t=st=1668861744~exp=1668862344~hmac=3a1b280a55482f997640a3e1fc8f55b93bd59ae9163258e5e9d07d5ad86f21c2",
+        "group": "rolls",
+        "title":"Ролл терияки",
+        "description":"Рис, сыр сливочный, лосось терияки, кунжут, соус чили",
+        "price": 320,
+        "weight": "200 грамм",
+        "amount": 1
+    },
+        {
+        "id": 11,
+        "url":"https://img.freepik.com/free-photo/four-california-rolls_463209-114.jpg?w=1380&t=st=1670447639~exp=1670448239~hmac=5ac22f126c5f93006d05bb76e9136528f31f0f2910252368ea1c169d6fee24c6",
+        "group": "rolls",
+        "title":"Ролл креветка",
+        "description":"Лосось, креветка, рис, сыр сливочный, омлет, соус сладкий Чили",
+        "price": 320,
+        "weight": "200 грамм",
+        "amount": 1
+    }, 
+        {
+        "id": 12,
+        "url":"https://img.freepik.com/free-photo/man-holding-sticks-with-tempura-roll-rice-crab-cream-cheese-sesame-eel-ginger-wasabi-side-view_141793-3566.jpg?w=1380&t=st=1668861816~exp=1668862416~hmac=4c26c5d9e461c43ab51335b613afec562c98a1ca11f869e0a6f127ee38921dae",
+        "group": "rolls",
+        "title":"Ролл жареный",
+        "description":"рис, бекон, сыр, кляр, сухари панировочные",
+        "price": 240,
+        "weight": "300 грамм",
+        "amount": 1
+    }
+],
+"sets" : [
+        {
+        "id": 13,
+        "url":"https://img.freepik.com/free-photo/high-angle-maki-sushi-assortment-slate-with-chopsticks_23-2148377527.jpg?w=1380&t=st=1670444793~exp=1670445393~hmac=6ae221ca2ba730c4b18b840d757ab9e637a3fe0ebdd2a2095435c7446062f2d8",
+        "group": "sets",
+        "title":"сет нежный",
+        "description":"Калифорния с лососем - 8 шт., Бангаса - 8 шт., Венеция - 8 шт., Краб - 8 шт., Цунами - 8 шт",
+        "price": 1240,
+        "weight": "1350 грамм",
+        "amount": 1
+    },
+        {
+        "id": 14,
+        "url":"https://img.freepik.com/free-photo/top-view-mix-sushi-rolls-with-wasabi-ginger-stand_141793-13147.jpg?w=1380&t=st=1670444879~exp=1670445479~hmac=e35dd87b27d30cf25350b2f8270ccd593a5a91fbc0b8705f6115993021ccf0a9",
+        "group": "sets",
+        "title":"сет япона мама",
+        "description":"Сакура, запечённый с курицей, нежный краб, тамаго маки",
+        "price": 950,
+        "weight": "850 грамм",
+        "amount": 1
+    },
+        {
+        "id": 15,
+        "url":"https://img.freepik.com/free-photo/sushi-with-cucumber-ginger-wasabi-and-sesame-seeds_141793-17605.jpg?w=1380&t=st=1669048209~exp=1669048809~hmac=6c9140f2369a9bd7301bfa5bb2b2d1b1d541b5195fdf1d41b54b03dd27730fb8",
+        "group": "sets",
+        "title":"сет изумительный",
+        "description":"Филадельфия, цунами, тори масаго, томаго чиз, пепперони ролл",
+        "price": 1100,
+        "weight": "1000 грамм",
+        "amount": 1
+    },
+            {
+        "id": 16,
+        "url":"https://img.freepik.com/premium-photo/set-sushi-rolls-with-eel-salmon-avocado-cucumber-nori-leaves-and-cream-cheese-inside-isolated-on-white_85601-187.jpg?w=1380",
+        "group": "sets",
+        "title":"сет бамбуковый рай",
+        "description":"Сакура 8 кусочков, нежный 8 кусочков, жаренный маки с курицей 8 кусочков",
+        "price": 850,
+        "weight": "650 грамм",
+        "amount": 1
+    },
+        {
+        "id": 17,
+        "url":"https://img.freepik.com/free-photo/wooden-plate-of-traditional-sushi-rolls-on-black-table_114579-65868.jpg?w=1380&t=st=1669048269~exp=1669048869~hmac=aca6b25db52db9031c28d784c77e84ba103ea3a099ec188700a8a01b8e218361",
+        "group": "sets",
+        "title":"сет простой",
+        "description":"Филадельфия, акита, томаго Чиз, апечённый с лососем, Запечённый с курицей, запечённый с беконом",
+        "price": 990,
+        "weight": "1100 грамм",
+        "amount": 1
+    },
+            {
+        "id": 18,
+        "url":"https://img.freepik.com/free-photo/traditional-japanese-sushi-arrangement_23-2148809926.jpg?w=1380&t=st=1669048301~exp=1669048901~hmac=ea368ac1d2bad3f8042ac9e582aa5a9e97dd28b3276d155aee0e9c537b3f3e2e",
+        "group": "sets",
+        "title":"сет острый самурай",
+        "description":"Филадельфия, Пикантный ролл с лососем, тамаго маки",
+        "price": 950,
+        "weight": "1050 грамм",
+        "amount": 1
+    }
+    ],
+"beverages" : [
+        {
+        "id": 19,
+        "url":"https://s1.1zoom.ru/big0/736/Drinks_Coca-Cola_Bottle_580578_1280x853.jpg",
+        "group": "beverages",
+        "title":"Coca-Cola",
+        "description":"Coca-Cola",
+        "price": 150,
+        "weight": "500 мл",
+        "amount": 1
+    },
+        {
+        "id": 20,
+        "url":"https://s1.1zoom.ru/big0/577/Drinks_Kiwi_Apples_Wood_planks_Jar_516401_1280x853.jpg",
+        "group": "beverages",
+        "title":"Коктель \"киви\"",
+        "description":"Киви, яблоко, банан, мята",
+        "price": 320,
+        "weight": "160 мл",
+        "amount": 1
+    },
+        {
+        "id": 21,
+        "url":"https://s1.1zoom.ru/big0/579/Drinks_Lemons_Raspberry_Black_background_Wood_591144_1280x853.jpg",
+        "group": "beverages",
+        "title":"Коктель \"фруктовый\"",
+        "description":"Малина, черная смородина, клубника, ежевика, красная смородина",
+        "price": 250,
+        "weight": "160 мл",
+        "amount": 1
+    },
+            {
+        "id": 22,
+        "url":"https://s1.1zoom.ru/big0/835/Drinks_Lemons_Mojito_Mentha_Highball_glass_580352_1280x853.jpg",
+        "group": "beverages",
+        "title":"Мохито \"лайм\"",
+        "description":"коктейль на основе светлого рома, листьев мяты и лимона",
+        "price": 450,
+        "weight": "160 мл",
+        "amount": 1
+    },
+        {
+        "id": 23,
+        "url":"https://s1.1zoom.ru/big0/736/Drinks_Orange_fruit_Wood_planks_Two_Highball_glass_606067_1280x853.jpg",
+        "group": "beverages",
+        "title":"Апельсиновый рай",
+        "description":"коктель с дольками апельсина и мяты",
+        "price": 450,
+        "weight": "130 мл",
+        "amount": 1
+    },
+            {
+        "id": 24,
+        "url":"https://s1.1zoom.ru/big0/115/Strawberry_Smoothie_Drinks_Highball_glass_586651_1280x853.jpg",
+        "group": "beverages",
+        "title":"Клубничный смузи",
+        "description":"Клубника, йогурт, мороженое, сахарная пудра",
+        "price": 550,
+        "weight": "150 мл",
+        "amount": 1
+    }
+    ],
+"desserts" : [
+        {
+        "id": 25,
+        "url":"https://s1.1zoom.ru/big0/19/Dessert_Orange_fruit_Raspberry_Chocolate_Vanilla_609488_1280x853.jpg",
+        "group": "desserts",
+        "title":"Малиновый пудинг",
+        "description":"Апельсин, малина, шоколад",
+        "price": 350,
+        "weight": "500 грамм",
+        "amount": 1
+    },
+        {
+        "id": 26,
+        "url":"https://s1.1zoom.ru/big0/870/Yogurt_Dessert_Berry_Muesli_Highball_glass_598714_1280x853.jpg",
+        "group": "desserts",
+        "title":"Ягодные Мюсли",
+        "description":"Йогурт, ягоды, мюсли",
+        "price": 220,
+        "weight": "160 грамм",
+        "amount": 1
+    },
+        {
+        "id": 27,
+        "url":"https://s1.1zoom.ru/big0/843/Dessert_Raspberry_Little_cakes_Piece_Spoon_578332_1280x853.jpg",
+        "group": "desserts",
+        "title":"Пирожное \"шоколадный бриз\"",
+        "description":" Какао порошок, сливки, йогурт",
+        "price": 320,
+        "weight": "150 грамм",
+        "amount": 1
+    },
+            {
+        "id": 28,
+        "url":"https://s1.1zoom.ru/big0/130/Dessert_Strawberry_Powidl_Panna_cotta_Mentha_570409_1280x853.jpg",
+        "group": "desserts",
+        "title":"Клубничная нежность",
+        "description":"Клубника, варенье, мята",
+        "price": 240,
+        "weight": "100 грамм",
+        "amount": 1
+    },
+        {
+        "id": 29,
+        "url":"https://s1.1zoom.ru/big0/69/Cherry_Chocolate_Dessert_Muffin_515137_1280x853.jpg",
+        "group": "desserts",
+        "title":"Шоколадный маффин",
+        "description":"вишня, шоколад, на молоке и растительном масле",
+        "price": 280,
+        "weight": "230 грамм",
+        "amount": 1
+    },
+            {
+        "id": 30,
+        "url":"https://s1.1zoom.ru/big0/962/Dessert_Cakes_Piece_Marshmallow_525786_1280x853.jpg",
+        "group": "desserts",
+        "title":"Пирожное лакомка",
+        "description":"Маршмэллоу, желе, нежнейший крем",
+        "price": 500,
+        "weight": "70 грамм",
+        "amount": 1
+    }
+    ],
+"wok" : [
+        {
+        "id": 31,
+        "url":"https://img.freepik.com/premium-photo/funchoza-flambe-rice-noodles-with-vegetables-cooking-on-fire-in-wok-pan-street-food_255847-3822.jpg?w=1380",
+        "group": "wok",
+        "title":"Фунчоза",
+        "description":"Рисовая лапша фунчоза фламбе с овощами, приготовленными на огне в сковороде вок",
+        "price": 450,
+        "weight": "430 грамм",
+        "amount": 1
+    },
+        {
+        "id": 32,
+        "url":"https://img.freepik.com/free-photo/fried-noodles-plate_1339-2158.jpg?w=1380&t=st=1670448291~exp=1670448891~hmac=7e207e7658e9957f4312813dab10bea564a1007a332083ec32e2e896d2a78c0b",
+        "group": "wok",
+        "title":"Лапша Wok с жареной телятиной и овощами",
+        "description":"Телятина, перец, помидор, лапша",
+        "price": 380,
+        "weight": "360 грамм",
+        "amount": 1
+    },
+        {
+        "id": 33,
+        "url":"https://img.freepik.com/premium-photo/asian-woman-add-noodle-to-wok-pan-home-cooking-process-making-chinese-noodle-food_511235-6122.jpg?w=1380",
+        "group": "wok",
+        "title":"Лапша Wok с грибами и свининой",
+        "description":" Грибы, свинина, сливки, сыр, лапша",
+        "price": 520,
+        "weight": "450 грамм",
+        "amount": 1
+    },
+            {
+        "id": 34,
+        "url":"https://img.freepik.com/premium-photo/traditional-chinese-mongolian-beef-stir-fry-in-chinese-cast-iron-wok-with-cooking-chopsticks_211786-1452.jpg?w=1380",
+        "group": "wok",
+        "title":"Лапша Wok с говядиной",
+        "description":"Говядина, помидоры, перец, лапша",
+        "price": 340,
+        "weight": "250 грамм",
+        "amount": 1
+    },
+        {
+        "id": 35,
+        "url":"https://img.freepik.com/free-photo/pasta-spaghetti-with-shrimps-and-sauce_1220-5072.jpg?w=1380&t=st=1669058441~exp=1669059041~hmac=ba2e9d89d87bbf0b69e3c6b954936a3910bd7dff6015e4bd8066072128da60ca",
+        "group": "wok",
+        "title":"Лапша Wok с морепродуктами",
+        "description":"Креветки, мидии, спагетти, соус",
+        "price": 780,
+        "weight": "430 грамм",
+        "amount": 1
+    },
+            {
+        "id": 36,
+        "url":"https://img.freepik.com/free-photo/top-view-of-delicious-noodles-concept_23-2148773775.jpg?w=1380&t=st=1669058560~exp=1669059160~hmac=c8cdea54f2d7346af44fab1f65692f236cd8b713d0ac5da3073e21a0b47927e8",
+        "group": "wok",
+        "title":"Лапша Wok в соевом соусе",
+        "description":"говядина, соевый соус, зелень, лапша",
+        "price": 600,
+        "weight": "370 грамм",
+        "amount": 1
+    }
+    ]
+}

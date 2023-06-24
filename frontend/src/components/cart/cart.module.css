@@ -1,0 +1,362 @@
+
+
+.wrapAll{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row nowrap;
+    background-color: #4c5f489d;
+    border-bottom: 1px solid black;
+}
+.productName{
+    width: 250px;
+    text-align: center;
+}
+.title{
+    text-align: center;
+    margin-top: 50px;  
+    margin-bottom: 50px;
+    font-size: 2.5em;
+    width: 100%;
+}
+.totalAmount{
+    display: flex;
+    flex-flow: column nowrap;
+    font-size: 1.5em;
+    align-items: flex-end;
+    padding: 0 5% 0 0;
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+}
+.totalAmount div{
+    margin-bottom: 40px;
+}
+.totalAmount button{
+    cursor: pointer;
+    height: 50px;
+    width: 135px;
+    border-radius: 20px;
+    background-color: darkgreen;
+    color: aliceblue;
+    font-size: 23px;
+    box-shadow: 0 0 2px 1px black;
+    animation: buttonMove 5s 0s both infinite;
+    -webkit-animation: buttonMove 5s 0s both infinite;
+}
+
+.menuWrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    width: 300px;
+    padding: 25px 0 0 0;
+    color: #0c0803;
+    text-shadow: 1px 1px 2px rgb(192, 186, 186);
+}
+.menuWrap div{
+    margin-bottom: 40px;
+    font-size: 25px;
+    font-weight: bold;
+}
+.wrapCount{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row nowrap;
+    padding: 0 10px;
+    /*дляотступовэлементовдруготдруга*/
+}
+.wrapCount div{
+    margin: 0 10px;
+}
+.wrapCount div:nth-child(2){
+    color: rgb(158, 13, 13);
+}
+.garbage img{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+.garbage button{
+    background-color: transparent;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+}
+.garbage button:hover{
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.productImg{
+    height: 200px;
+    width: 250px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    border-radius: 20px;
+}
+.btn{
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    background-color: rgb(86, 101, 83);
+    color: beige;
+    box-shadow: 0 0 6px 1px rgb(221, 219, 219);
+    cursor: pointer;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    border-radius: 20px;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* убираем выделение кнопки синим на Андроиде*/
+    -webkit-tap-highlight-color: transparent; /* убираем выделение кнопки синим на Андроиде*/
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; /*убираем выделение текста*/
+}
+
+.clickBtnDown{
+    animation: increase .1s linear  1 alternate;
+    -webkit-animation: increase .1s linear  1 alternate;
+}
+
+@-webkit-keyframes increase {
+    0% {
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+    }
+    50% {
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    100%{
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+    }
+  }
+  @keyframes increase {
+    0% {
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+    }
+    50% {
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    100%{
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+    }
+  }
+
+  @keyframes buttonMove {
+	0%, 20% {
+		transform: translate3d(0, 0, 0);
+		-webkit-transform: translate3d(0, 0, 0);
+		-moz-transform: translate3d(0, 0, 0);
+		-ms-transform: translate3d(0, 0, 0);
+		-o-transform: translate3d(0, 0, 0);
+}
+	10%, 14%, 18%, 2%, 6% {
+		transform: translate3d(-7px, 0, 0);
+		-webkit-transform: translate3d(-7px, 0, 0);
+		-moz-transform: translate3d(-7px, 0, 0);
+		-ms-transform: translate3d(-7px, 0, 0);
+		-o-transform: translate3d(-7px, 0, 0);
+}
+	12%, 16%, 4%, 8% {
+		transform: translate3d(7px, 0, 0);
+		-webkit-transform: translate3d(7px, 0, 0);
+		-moz-transform: translate3d(7px, 0, 0);
+		-ms-transform: translate3d(7px, 0, 0);
+		-o-transform: translate3d(7px, 0, 0);
+}
+}
+@-webkit-keyframes buttonMove {
+	0%, 20% {
+		transform: translate3d(0, 0, 0);
+		-webkit-transform: translate3d(0, 0, 0);
+		-moz-transform: translate3d(0, 0, 0);
+		-ms-transform: translate3d(0, 0, 0);
+		-o-transform: translate3d(0, 0, 0);
+}
+	10%, 14%, 18%, 2%, 6% {
+		transform: translate3d(-7px, 0, 0);
+		-webkit-transform: translate3d(-7px, 0, 0);
+		-moz-transform: translate3d(-7px, 0, 0);
+		-ms-transform: translate3d(-7px, 0, 0);
+		-o-transform: translate3d(-7px, 0, 0);
+}
+	12%, 16%, 4%, 8% {
+		transform: translate3d(7px, 0, 0);
+		-webkit-transform: translate3d(7px, 0, 0);
+		-moz-transform: translate3d(7px, 0, 0);
+		-ms-transform: translate3d(7px, 0, 0);
+		-o-transform: translate3d(7px, 0, 0);
+}
+}
+
+@media (min-width: 769px) {
+    .productImg{
+        margin-left: 10px;
+    }
+    .productName{
+        padding-left: 10px;
+    }
+    .garbage button{
+        width: 70px;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+    .productImg{
+        height: 100px;
+        width: 120px;
+        margin-left: 10px;
+    }
+    .productName{
+        width: 120px;
+    }
+    .menuWrap{
+        width: 145px;
+    }
+    .menuWrap div{
+        font-size: 24px;
+    }
+    .garbage img{
+        width: 40px;
+        height: 40px;
+    }
+    .btn{
+        width: 40px;
+        height: 40px;
+    }
+    .garbage button{
+        width: 70px;
+    }
+}
+
+@media (max-width: 479px) {
+    .totalAmount{
+        display: flex;
+        flex-flow: column nowrap;
+        font-size: 1.2em;
+        padding: 0 10px 0 10px;
+        align-items: center;
+    }
+}
+@media (min-width: 360px) and (max-width: 479px) {
+    .wrapAll{
+        flex-flow: column nowrap;
+    }
+    .menuWrap{
+        width: 100%;
+    }
+    .productImg{
+        height: 200px;
+        width: 250px;
+        margin: 30px 0 20px 0;
+    }
+    .productName{
+        width: 250px;
+    }
+    .garbage button{
+        margin-bottom: 25px;
+    }
+    .garbage img{
+        width: 45px;
+        height: 45px;
+    }
+    .btn{
+        width: 45px;
+        height: 45px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 359px) {
+    .wrapAll{
+        flex-flow: column nowrap;
+    }
+    .menuWrap{
+        width: 100%;
+    }
+    .productImg{
+        height: 150px;
+        width: 200px;
+        margin: 30px 0 20px 0;
+    }
+    .productName{
+        width: 200px;
+    }
+    .garbage button{
+        margin-bottom: 25px;
+    }
+    .garbage img{
+        width: 40px;
+        height: 40px;
+    }
+    .btn{
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 319px) {
+    .wrapAll{
+        flex-flow: column nowrap;
+    }
+    .menuWrap{
+        width: 100%;
+    }
+    .productImg{
+        height: 100px;
+        width: 150px;
+        margin: 30px 0 20px 0;
+    }
+    .productName{
+        width: 150px;
+    }
+    .garbage button{
+        margin-bottom: 25px;
+    }
+    .garbage img{
+        width: 40px;
+        height: 40px;
+    }
+    .btn{
+        width: 40px;
+        height: 40px;
+    }
+}
