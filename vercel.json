@@ -1,16 +1,9 @@
 {
-    "version": 2,
-    "name": "food-delivery-website",
-    "builds" : [
+    "rewrites" : [
         {
-            "src": "/(.*)",
-            "use" : "@vercel/node"
+            "source": "/backend/(.*)",
+            "destination" : "/backend"
         }
-    ],
-    "routes": [
-        {
-            "src": "/(.*)",
-            "dest": "index.js"
-        }
+       
     ]
 }
