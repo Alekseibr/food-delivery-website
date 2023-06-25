@@ -6,11 +6,11 @@ const app = express();
 let fs = require('fs');
 const cors = require('cors');
 
+app.use(cors());
 
-app.options('*', cors());
 app.use(express.static(path.resolve(__dirname, '../frontend/build')));
 
-app.get('/pizza', cors(), (req, res) => {
+app.get('/pizza', (req, res) => {
   fs.readFile(__dirname +'/db.json', 'utf8', function (err, data) {
       if (err) throw err;
        obj = JSON.parse(data);
@@ -20,7 +20,7 @@ app.get('/pizza', cors(), (req, res) => {
   })
 });
 
-app.get('/pizza/:id', cors(), (req, res) => {
+app.get('/pizza/:id', (req, res) => {
   fs.readFile(__dirname +'/db.json', 'utf8', function (err, data) {
       if (err) throw err;
       let id = req.params.id;
@@ -32,7 +32,7 @@ app.get('/pizza/:id', cors(), (req, res) => {
   })
 });
 
-app.get('/rolls', cors(), (req, res) => {
+app.get('/rolls', (req, res) => {
   fs.readFile(__dirname +'/db.json', 'utf8', function (err, data) {
       if (err) throw err;
        obj = JSON.parse(data);
@@ -42,7 +42,7 @@ app.get('/rolls', cors(), (req, res) => {
   })
 });
 
-app.get('/rolls/:id', cors(), (req, res) => {
+app.get('/rolls/:id', (req, res) => {
   fs.readFile(__dirname +'/db.json', 'utf8', function (err, data) {
       if (err) throw err;
       let id = req.params.id;
@@ -54,7 +54,7 @@ app.get('/rolls/:id', cors(), (req, res) => {
   })
 });
 
-app.get('/sets', cors(), (req, res) => {
+app.get('/sets', (req, res) => {
   fs.readFile(__dirname +'/db.json', 'utf8', function (err, data) {
       if (err) throw err;
        obj = JSON.parse(data);
@@ -64,7 +64,7 @@ app.get('/sets', cors(), (req, res) => {
   })
 });
 
-app.get('/sets/:id', cors(), (req, res) => {
+app.get('/sets/:id', (req, res) => {
   fs.readFile(__dirname +'/db.json', 'utf8', function (err, data) {
       if (err) throw err;
       let id = req.params.id;
@@ -76,7 +76,7 @@ app.get('/sets/:id', cors(), (req, res) => {
   })
 });
 
-app.get('/beverages', cors(), (req, res) => {
+app.get('/beverages', (req, res) => {
   fs.readFile(__dirname +'/db.json', 'utf8', function (err, data) {
       if (err) throw err;
        obj = JSON.parse(data);
@@ -86,7 +86,7 @@ app.get('/beverages', cors(), (req, res) => {
   })
 });
 
-app.get('/beverages/:id', cors(), (req, res) => {
+app.get('/beverages/:id', (req, res) => {
   fs.readFile(__dirname +'/db.json', 'utf8', function (err, data) {
       if (err) throw err;
       let id = req.params.id;
@@ -98,7 +98,7 @@ app.get('/beverages/:id', cors(), (req, res) => {
   })
 });
 
-app.get('/desserts', cors(), (req, res) => {
+app.get('/desserts', (req, res) => {
   fs.readFile(__dirname +'/db.json', 'utf8', function (err, data) {
       if (err) throw err;
        obj = JSON.parse(data);
@@ -108,7 +108,7 @@ app.get('/desserts', cors(), (req, res) => {
   })
 });
 
-app.get('/desserts/:id', cors(), (req, res) => {
+app.get('/desserts/:id', (req, res) => {
   fs.readFile(__dirname +'/db.json', 'utf8', function (err, data) {
       if (err) throw err;
       let id = req.params.id;
@@ -120,7 +120,7 @@ app.get('/desserts/:id', cors(), (req, res) => {
   })
 });
 
-app.get('/wok', cors(), (req, res) => {
+app.get('/wok', (req, res) => {
   fs.readFile(__dirname +'/db.json', 'utf8', function (err, data) {
       if (err) throw err;
        obj = JSON.parse(data);
@@ -130,7 +130,7 @@ app.get('/wok', cors(), (req, res) => {
   })
 });
 
-app.get('/wok/:id', cors(), (req, res) => {
+app.get('/wok/:id', (req, res) => {
   fs.readFile(__dirname +'/db.json', 'utf8', function (err, data) {
       if (err) throw err;
       let id = req.params.id;
@@ -142,7 +142,7 @@ app.get('/wok/:id', cors(), (req, res) => {
   })
 });
 
-app.get(`/*`, function (req, res) {
+app.get(`/*`, (req, res) => {
     res.status(404);
     res.sendFile(path.join(process.cwd(), 'frontend/build', 'index.html'));
 });
