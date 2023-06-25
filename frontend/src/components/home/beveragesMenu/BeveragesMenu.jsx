@@ -6,7 +6,7 @@ import NotFound from '../../notFound/NotFound';
 import style from '../menu.module.css';
 
 async function getMenu(){
-  const res = await fetch(`http://localhost:3001/beverages`);
+  const res = await fetch(`${process.env.REACT_APP_API_URL}/beverages`);
   if(!res.ok) {
     throw new Response('', {status: res.status});
   }

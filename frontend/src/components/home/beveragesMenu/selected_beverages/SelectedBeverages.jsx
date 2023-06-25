@@ -7,7 +7,7 @@ import style from '../../selectedMenu.module.css';
 
 //из загрузчика фетчим и возвращаем json по конкретному продукту иначе прокидываем ошибку
 async function getSelectItem(id){
-    const res = await fetch(`http://localhost:3001/beverages/${id}`);
+    const res = await fetch(`${process.env.REACT_APP_API_URL}/beverages/${id}`);
     if(!res.ok) {
         throw new Response('', {status: res.status})
     }
