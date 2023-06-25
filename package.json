@@ -18,7 +18,7 @@
   "bugs": {
     "url": "https://github.com/Alekseibr/food-delivery-website/issues"
   },
-  "homepage": "https://github.com/Alekseibr/food-delivery-website#readme",
+  "homepage": ".",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.18.2"
