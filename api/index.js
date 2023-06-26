@@ -29,7 +29,8 @@ app.get('/api/pizza/:id', (req, res) => {
        obj = JSON.parse(data);
        res.status(200);
        res.set('Content-Type', 'application/json');
-       let object = obj.pizza.find(i => i.id === id)
+       let object = obj.pizza.find(i => i.id == id)
+       console.log(obj);
        res.json(object)
   })
 });
@@ -51,7 +52,7 @@ app.get('/api/rolls/:id', (req, res) => {
        obj = JSON.parse(data);
        res.status(200);
        res.set('Content-Type', 'application/json');
-       let object = obj.rolls.find(i => i.id === id)
+       let object = obj.rolls.find(i => i.id == id)
        res.json(object)
   })
 });
@@ -73,7 +74,7 @@ app.get('/api/sets/:id', (req, res) => {
        obj = JSON.parse(data);
        res.status(200);
        res.set('Content-Type', 'application/json');
-       let object = obj.sets.find(i => i.id === id)
+       let object = obj.sets.find(i => i.id == id)
        res.json(object)
   })
 });
@@ -95,7 +96,7 @@ app.get('/api/beverages/:id', (req, res) => {
        obj = JSON.parse(data);
        res.status(200);
        res.set('Content-Type', 'application/json');
-       let object = obj.beverages.find(i => i.id === id)
+       let object = obj.beverages.find(i => i.id == id)
        res.json(object)
   })
 });
@@ -117,7 +118,7 @@ app.get('/api/desserts/:id', (req, res) => {
        obj = JSON.parse(data);
        res.status(200);
        res.set('Content-Type', 'application/json');
-       let object = obj.desserts.find(i => i.id === id)
+       let object = obj.desserts.find(i => i.id == id)
        res.json(object)
   })
 });
@@ -139,7 +140,7 @@ app.get('/api/wok/:id', (req, res) => {
        obj = JSON.parse(data);
        res.status(200);
        res.set('Content-Type', 'application/json');
-       let object = obj.wok.find(i => i.id === id)
+       let object = obj.wok.find(i => i.id == id)
        res.json(object)
   })
 });
