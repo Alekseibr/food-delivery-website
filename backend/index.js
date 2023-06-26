@@ -9,7 +9,7 @@ let obj;
 
 app.use(cors());
 
-// app.use(express.static(path.resolve(__dirname, '../build')));
+app.use(express.static(path.resolve(__dirname, '../build')));
 
 app.get('/pizza', (req, res) => {
   fs.readFile(__dirname +'/db.json', 'utf8', function (err, data) {
