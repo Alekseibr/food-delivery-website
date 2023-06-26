@@ -5,7 +5,7 @@ import NotFound from '../../notFound/NotFound';
 import style from '../menu.module.css';
 
 async function getMenu(){
-  const res = await fetch(`${process.env.REACT_APP_API_URL}/pizza`);
+  const res = await fetch(`https://food-delivery-website-three.vercel.app/pizza`);
   if(!res.ok) {
     throw new Response('', {status: res.status})
   }
