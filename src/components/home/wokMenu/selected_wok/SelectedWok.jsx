@@ -7,7 +7,7 @@ import style from '../../selectedMenu.module.css';
 
 //из загрузчика фетчим и возвращаем json по конкретному продукту иначе прокидываем ошибку
 async function getSelectItem(id){
-    const res = await fetch(`${process.env.REACT_APP_API_URL}/wok/${id}`);
+    const res = await fetch(`${process.env.REACT_APP_API_URL}/api/wok/${id}`);
     if(!res.ok) {
         throw new Response('', {status: res.status})
     }

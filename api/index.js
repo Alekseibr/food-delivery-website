@@ -1,17 +1,18 @@
 
-const path = require('path');
+
 const express = require('express');
-const PORT = process.env.PORT || 3001;
+
 const app = express();
 let fs = require('fs');
 const cors = require('cors');
 let obj;
-
+const dotenv = require('dotenv');
+dotenv.config();
 app.use(cors());
 
-app.use(express.static(path.resolve(__dirname, '../build')));
 
-app.get('/backend/pizza', (req, res) => {
+
+app.get('/api/pizza', (req, res) => {
   fs.readFile(__dirname +'/db.json', 'utf8', function (err, data) {
       if (err) throw err;
        obj = JSON.parse(data);
@@ -21,7 +22,7 @@ app.get('/backend/pizza', (req, res) => {
   })
 });
 
-app.get('/pizza/:id', (req, res) => {
+app.get('/api/pizza/:id', (req, res) => {
   fs.readFile(__dirname +'/db.json', 'utf8', function (err, data) {
       if (err) throw err;
       let id = req.params.id;
@@ -33,7 +34,7 @@ app.get('/pizza/:id', (req, res) => {
   })
 });
 
-app.get('/rolls', (req, res) => {
+app.get('/api/rolls', (req, res) => {
   fs.readFile(__dirname +'/db.json', 'utf8', function (err, data) {
       if (err) throw err;
        obj = JSON.parse(data);
@@ -43,7 +44,7 @@ app.get('/rolls', (req, res) => {
   })
 });
 
-app.get('/rolls/:id', (req, res) => {
+app.get('/api/rolls/:id', (req, res) => {
   fs.readFile(__dirname +'/db.json', 'utf8', function (err, data) {
       if (err) throw err;
       let id = req.params.id;
@@ -55,7 +56,7 @@ app.get('/rolls/:id', (req, res) => {
   })
 });
 
-app.get('/sets', (req, res) => {
+app.get('/api/sets', (req, res) => {
   fs.readFile(__dirname +'/db.json', 'utf8', function (err, data) {
       if (err) throw err;
        obj = JSON.parse(data);
@@ -65,7 +66,7 @@ app.get('/sets', (req, res) => {
   })
 });
 
-app.get('/sets/:id', (req, res) => {
+app.get('/api/sets/:id', (req, res) => {
   fs.readFile(__dirname +'/db.json', 'utf8', function (err, data) {
       if (err) throw err;
       let id = req.params.id;
@@ -77,7 +78,7 @@ app.get('/sets/:id', (req, res) => {
   })
 });
 
-app.get('/beverages', (req, res) => {
+app.get('/api/beverages', (req, res) => {
   fs.readFile(__dirname +'/db.json', 'utf8', function (err, data) {
       if (err) throw err;
        obj = JSON.parse(data);
@@ -87,7 +88,7 @@ app.get('/beverages', (req, res) => {
   })
 });
 
-app.get('/beverages/:id', (req, res) => {
+app.get('/api/beverages/:id', (req, res) => {
   fs.readFile(__dirname +'/db.json', 'utf8', function (err, data) {
       if (err) throw err;
       let id = req.params.id;
@@ -99,7 +100,7 @@ app.get('/beverages/:id', (req, res) => {
   })
 });
 
-app.get('/desserts', (req, res) => {
+app.get('/api/desserts', (req, res) => {
   fs.readFile(__dirname +'/db.json', 'utf8', function (err, data) {
       if (err) throw err;
        obj = JSON.parse(data);
@@ -109,7 +110,7 @@ app.get('/desserts', (req, res) => {
   })
 });
 
-app.get('/desserts/:id', (req, res) => {
+app.get('/api/desserts/:id', (req, res) => {
   fs.readFile(__dirname +'/db.json', 'utf8', function (err, data) {
       if (err) throw err;
       let id = req.params.id;
@@ -121,7 +122,7 @@ app.get('/desserts/:id', (req, res) => {
   })
 });
 
-app.get('/wok', (req, res) => {
+app.get('/api/wok', (req, res) => {
   fs.readFile(__dirname +'/db.json', 'utf8', function (err, data) {
       if (err) throw err;
        obj = JSON.parse(data);
@@ -131,7 +132,7 @@ app.get('/wok', (req, res) => {
   })
 });
 
-app.get('/wok/:id', (req, res) => {
+app.get('/api/wok/:id', (req, res) => {
   fs.readFile(__dirname +'/db.json', 'utf8', function (err, data) {
       if (err) throw err;
       let id = req.params.id;
@@ -143,14 +144,11 @@ app.get('/wok/:id', (req, res) => {
   })
 });
 
-app.get(`/*`, (req, res) => {
-    res.status(404);
-    res.sendFile(path.join(process.cwd(), 'build', 'index.html'));
-});
 
-if(PORT){
-  app.listen(PORT, ()=>{
-    console.log(`Сервер запущен на http://localhost:${PORT}`)
+
+if(process.env.API_PORT){
+  app.listen(process.env.API_PORT, ()=>{
+    console.log(`Сервер запущен на http://localhost:${process.env.API_PORT}`)
   })
 }
 
