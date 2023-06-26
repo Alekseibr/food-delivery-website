@@ -5,10 +5,11 @@ const PORT = process.env.PORT || 3001;
 const app = express();
 let fs = require('fs');
 const cors = require('cors');
+let obj;
 
 app.use(cors());
 
-app.use(express.static(path.resolve(__dirname, '../frontend/build')));
+// app.use(express.static(path.resolve(__dirname, '../build')));
 
 app.get('/pizza', (req, res) => {
   fs.readFile(__dirname +'/db.json', 'utf8', function (err, data) {
@@ -144,7 +145,7 @@ app.get('/wok/:id', (req, res) => {
 
 app.get(`/*`, (req, res) => {
     res.status(404);
-    res.sendFile(path.join(process.cwd(), 'frontend/build', 'index.html'));
+    res.sendFile(path.join(process.cwd(), 'build', 'index.html'));
 });
 
 if(PORT){
