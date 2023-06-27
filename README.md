@@ -10,5 +10,5 @@
 <p>В каталоге api создаем переменную среду файл<strong> .env</strong> в нем пишем <strong>API_PORT = 3001</strong></p>
 <p>Запуск сайта из корня проекта в первом терминале командой<strong>npm run api</strong> во втором терминале командой<strong>npm start</strong></p>
 
-<p>Посмотреть сайт можно <a href="https://food-delivery-website-sand.vercel.app/">ЗДЕСЬ</a> развернуто на vercel</p>
+<p>Посмотреть сайт можно <a href="https://food-delivery-website-sand.vercel.app/" target="_blank">ЗДЕСЬ</a> развернуто на vercel</p>
 
