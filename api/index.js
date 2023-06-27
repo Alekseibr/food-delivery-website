@@ -30,7 +30,6 @@ app.get('/api/pizza/:id', (req, res) => {
        res.status(200);
        res.set('Content-Type', 'application/json');
        let object = obj.pizza.find(i => i.id == id)
-       console.log(obj);
        res.json(object)
   })
 });

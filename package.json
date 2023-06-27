@@ -20,10 +20,11 @@
   "scripts": {
     "dev": "concurrently \"npm run server\" \"npm start\"",
     "start": "react-scripts start",
+    "api": "cd api && node index.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "server": "json-server -w serverJson/db.json -p 3001"
+    "server": "json-server -w api/db.json -p 3001"
   },
   "eslintConfig": {
     "extends": [
